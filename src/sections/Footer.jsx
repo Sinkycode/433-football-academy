@@ -18,7 +18,7 @@ const Footer = () => {
         {/* Brand Column */}
         <div className="flex flex-col gap-4 flex-1">
           <a href="/" className="text-white text-2xl font-bold">
-            LOGO
+            433 Academy
           </a>
           <p className="text-white-400 text-base leading-7 mt-4 max-w-sm">
             Empowering young athletes to achieve their dreams through

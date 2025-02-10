@@ -30,22 +30,22 @@ const Contact = () => {
     {
       name: "facebook",
       url: "https://facebook.com",
-      icon: "/src/assets/icons/facebook.svg",
+      icon: "/assets/icons/facebook.svg",
     },
     {
       name: "twitter",
       url: "https://twitter.com",
-      icon: "/src/assets/icons/twitter.svg",
+      icon: "/assets/icons/twitter.svg",
     },
     {
       name: "instagram",
       url: "https://instagram.com",
-      icon: "/src/assets/icons/instagram.svg",
+      icon: "/assets/icons/instagram.svg",
     },
     {
       name: "youtube",
       url: "https://youtube.com",
-      icon: "/src/assets/icons/youtube.svg",
+      icon: "/assets/icons/youtube.svg",
     },
   ];
 

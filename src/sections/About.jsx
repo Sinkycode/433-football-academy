@@ -35,7 +35,7 @@ const About = () => {
           className="flex-1"
         >
           <img
-            src="/optimized/trainings/training1-normal.webp"
+            src="/assets/images/academy-training.jpg"
             alt="Academy Training"
             className="w-full h-[600px] object-cover rounded-2xl shadow-3xl"
           />

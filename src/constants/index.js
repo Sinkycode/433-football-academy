@@ -1,12 +1,3 @@
-import {
-  facebook,
-  instagram,
-  shieldTick,
-  support,
-  truckFast,
-  twitter,
-} from "../assets/icons";
-
 export const navLinks = [
   { href: "#home", label: "Home" },
   { href: "#about-us", label: "About club" },
@@ -221,17 +212,17 @@ export const socialMedia = [
   {
     name: "facebook",
     url: "https://facebook.com",
-    icon: { facebook },
+    icon: "/assets/icons/facebook.svg",
   },
   {
     name: "twitter",
     url: "https://twitter.com",
-    icon: { twitter },
+    icon: "/assets/icons/twitter.svg",
   },
   {
     name: "instagram",
     url: "https://instagram.com",
-    icon: { instagram },
+    icon: "/assets/icons/instagram.svg",
   },
   {
     name: "youtube",

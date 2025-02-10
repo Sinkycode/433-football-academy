@@ -14,36 +14,33 @@ const HeroBackground = memo(() => (
       {/* Large screens */}
       <source
         media="(min-width: 1280px)"
-        srcSet="/src/assets/images/hero-bg-large.webp"
+        srcSet="/assets/images/hero-bg-large.webp"
         type="image/webp"
       />
       <source
         media="(min-width: 1280px)"
-        srcSet="/src/assets/images/hero-bg-large.jpg"
+        srcSet="/assets/images/hero-bg-large.jpg"
         type="image/jpeg"
       />
 
       {/* Medium screens */}
       <source
         media="(min-width: 768px)"
-        srcSet="/src/assets/images/hero-bg-medium.webp"
+        srcSet="/assets/images/hero-bg-medium.webp"
         type="image/webp"
       />
       <source
         media="(min-width: 768px)"
-        srcSet="/src/assets/images/hero-bg-medium.jpg"
+        srcSet="/assets/images/hero-bg-medium.jpg"
         type="image/jpeg"
       />
 
       {/* Small screens */}
-      <source
-        srcSet="/src/assets/images/hero-bg-small.webp"
-        type="image/webp"
-      />
+      <source srcSet="/assets/images/hero-bg-small.webp" type="image/webp" />
 
       {/* Fallback */}
       <img
-        src="/src/assets/images/hero-bg-small.jpg"
+        src="/assets/images/hero-bg-small.jpg"
         alt=""
         className="w-full h-full object-cover"
         loading="eager"
