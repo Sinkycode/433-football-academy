@@ -1,6 +1,6 @@
 import { useState, useEffect, useCallback, useMemo } from "react";
 import { motion } from "framer-motion";
-import { galleryImages } from "../constants";
+import { galleryImages } from "../constants/galleryImages";
 import GalleryItem from "../components/GalleryItem";
 import GalleryItemSkeleton from "../components/GalleryItemSkeleton";
 import CategoryFilter from "../components/CategoryFilter";

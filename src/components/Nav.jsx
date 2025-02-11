@@ -54,8 +54,8 @@ const Nav = () => {
               <a
                 href={item.href}
                 onClick={(e) => scrollToSection(e, item.href)}
-                className="font-montserrat leading-normal text-lg text-slate-gray
-                  hover:text-coral-red transition-colors"
+                className={`font-montserrat leading-normal text-lg
+                  hover:text-coral-red transition-colors ${isScrolled ? "text-slate-gray" : "text-white"}`}
               >
                 {item.label}
               </a>
@@ -74,6 +74,7 @@ const Nav = () => {
             alt={isMenuOpen ? "close" : "menu"}
             width={25}
             height={25}
+            className={`${!isScrolled ? "invert" : null}`}
           />
         </button>
 

@@ -12,7 +12,7 @@ const SocialLinks = ({ socials }) => (
           rel="noopener noreferrer"
           className="bg-white p-3 rounded-full shadow-md hover:shadow-lg transition-all"
         >
-          <img src={social.icon} alt={social.name} className="w-5 h-5" />
+          <social.icon size={30} color="#000" />
         </a>
       ))}
     </div>

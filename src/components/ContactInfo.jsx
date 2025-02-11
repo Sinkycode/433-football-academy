@@ -1,9 +1,9 @@
 import PropTypes from "prop-types";
 
-const ContactInfo = ({ icon, title, content }) => (
+const ContactInfo = ({ icon: Icon, title, content }) => (
   <div className="flex gap-4 items-start">
     <div className="bg-coral-red rounded-full p-3">
-      <img src={icon} alt={title} className="w-6 h-6" />
+      <Icon size={24} className="text-white" />
     </div>
     <div>
       <h4 className="font-montserrat font-semibold mb-1">{title}</h4>

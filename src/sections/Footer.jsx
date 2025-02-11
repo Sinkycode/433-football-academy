@@ -1,4 +1,5 @@
 import { footerLinks, socialMedia } from "../constants";
+import PropTypes from "prop-types";
 
 const FooterColumn = ({ title, children }) => (
   <div className="flex flex-col gap-4">
@@ -33,7 +34,7 @@ const Footer = () => {
                 rel="noopener noreferrer"
                 className="bg-white rounded-full w-10 h-10 flex items-center justify-center hover:bg-coral-red transition-colors"
               >
-                <img src={social.icon} alt={social.name} className="w-5 h-5" />
+                <social.icon size={20} color="#000" />
               </a>
             ))}
           </div>
@@ -108,6 +109,11 @@ const Footer = () => {
       </div>
     </footer>
   );
+};
+
+FooterColumn.prototype = {
+  title: PropTypes.string.isRequired,
+  children: PropTypes.node.isRequired,
 };
 
 export default Footer;

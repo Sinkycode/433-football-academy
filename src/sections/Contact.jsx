@@ -1,51 +1,53 @@
 import ContactForm from "../components/ContactForm";
 import ContactInfo from "../components/ContactInfo";
 import SocialLinks from "../components/SocialLinks";
+import { CONTACT_ICONS, SOCIAL_ICONS } from "../constants/icons"; // Import constants
 
 const Contact = () => {
   const contactDetails = [
     {
-      icon: "/path-to-location-icon.svg",
+      icon: CONTACT_ICONS.location, // ✅ React Icon
       title: "Our Location",
       content: "123 Football Street, Sports City, 12345",
     },
     {
-      icon: "/path-to-phone-icon.svg",
+      icon: CONTACT_ICONS.phone, // ✅ React Icon
       title: "Phone Number",
       content: "+1 (234) 567-8900",
     },
     {
-      icon: "/path-to-email-icon.svg",
+      icon: CONTACT_ICONS.email, // ✅ React Icon
       title: "Email Address",
       content: "contact@footballacademy.com",
     },
     {
-      icon: "/path-to-clock-icon.svg",
+      icon: CONTACT_ICONS.clock, // ✅ React Icon
       title: "Working Hours",
       content: "Monday - Friday: 9:00 AM - 6:00 PM",
     },
   ];
 
+  // ✅ Use React Icons instead of image paths
   const socialLinks = [
     {
       name: "facebook",
       url: "https://facebook.com",
-      icon: "/assets/icons/facebook.svg",
+      icon: SOCIAL_ICONS.facebook, // ✅ React Component
     },
     {
       name: "twitter",
       url: "https://twitter.com",
-      icon: "/assets/icons/twitter.svg",
+      icon: SOCIAL_ICONS.twitter, // ✅ React Component
     },
     {
       name: "instagram",
       url: "https://instagram.com",
-      icon: "/assets/icons/instagram.svg",
+      icon: SOCIAL_ICONS.instagram, // ✅ React Component
     },
     {
       name: "youtube",
       url: "https://youtube.com",
-      icon: "/assets/icons/youtube.svg",
+      icon: SOCIAL_ICONS.youtube, // ✅ React Component
     },
   ];
 

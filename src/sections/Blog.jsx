@@ -1,6 +1,6 @@
 import { useState, useEffect, useCallback, useMemo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { blogPosts } from "../constants";
+import { blogPosts } from "../constants/blogPosts";
 import BlogCard from "../components/BlogCard";
 import BlogCardSkeleton from "../components/BlogCardSkeleton";
 import { fadeIn, staggerContainer } from "../constants/animations";
