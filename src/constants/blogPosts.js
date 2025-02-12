@@ -5,10 +5,10 @@ export const blogPosts = [
     title: "The Evolution of Modern Football Tactics",
     excerpt:
       "Exploring how tactical innovations have shaped the beautiful game and continue to influence modern football strategies.",
-    image: "/optimized/blogImages/awards/award1-large.webp",
-    imageFallback: "/optimized/blogImages/awards/award1-large.jpg",
-    thumbnail: "/optimized/blogImages/awards/award1-small.webp",
-    thumbnailFallback: "/optimized/blogImages/awards/award1-small.jpg",
+    image: "/optimized/blog/tactics/tactics1-large.webp",
+    imageFallback: "/optimized/blog/tactics/tactics1-large.jpg",
+    thumbnail: "/optimized/blog/tactics/tactics1-small.webp",
+    thumbnailFallback: "/optimized/blog/tactics/tactics1-small.jpg",
     category: "Tactics",
     date: "March 15, 2024",
     readTime: 5,
@@ -18,10 +18,10 @@ export const blogPosts = [
     title: "Essential Recovery Techniques for Athletes",
     excerpt:
       "Discover the most effective recovery methods to maintain peak performance and prevent injuries throughout the season.",
-    image: "/optimized/blogImages/awards/award2-large.webp",
-    imageFallback: "/optimized/blogImages/awards/award2-large.jpg",
-    thumbnail: "/optimized/blogImages/awards/award2-small.webp",
-    thumbnailFallback: "/optimized/blogImages/awards/award2-small.jpg",
+    image: "/optimized/blog/trainings/trainings1-large.webp",
+    imageFallback: "/optimized/blog/trainings/training1-large.jpg",
+    thumbnail: "/optimized/blog/trainings/training1-small.webp",
+    thumbnailFallback: "/optimized/blog/trainings/training1-small.jpg",
     category: "Training",
     date: "March 12, 2024",
     readTime: 4,
@@ -31,7 +31,10 @@ export const blogPosts = [
     title: "Nutrition Guide: Fueling for Match Day",
     excerpt:
       "Learn about the optimal pre-match nutrition strategies to enhance your performance on the field.",
-    image: "/blogImages/awards/award3.jpg", // Add your image path
+    image: "/optimized/blog/nutrition/nutrition1-large.webp",
+    imageFallback: "/optimized/blog/nutrition/nutrition1-large.jpg",
+    thumbnail: "/optimized/blog/nutrition/nutrition1-small.webp",
+    thumbnailFallback: "/optimized/blog/nutrition/nutrition1-small.jpg",
     category: "Nutrition",
     date: "March 10, 2024",
     readTime: 6,
@@ -41,7 +44,10 @@ export const blogPosts = [
     title: "Mental Conditioning in Football",
     excerpt:
       "Understanding the importance of mental strength and how to develop resilience as a footballer.",
-    image: "/blogImages/events/event1.jpg", // Add your image path
+    image: "/optimized/blog/lifestyles/lifestyles1-large.webp",
+    imageFallback: "/optimized/blog/lifestyles/lifestyles1-large.jpg",
+    thumbnail: "/optimized/blog/lifestyles/lifestyles1-small.webp",
+    thumbnailFallback: "/optimized/blog/lifestyle/lifestyles1-small.jpg",
     category: "Lifestyle",
     date: "March 8, 2024",
     readTime: 3,
@@ -51,7 +57,10 @@ export const blogPosts = [
     title: "Advanced Dribbling Techniques",
     excerpt:
       "Master the art of ball control with these professional dribbling drills and exercises.",
-    image: "/blogImages/events/event2.jpg", // Add your image path
+    image: "/optimized/blog/trainings/trainings2-large.webp",
+    imageFallback: "/optimized/blog/trainings/training2-large.jpg",
+    thumbnail: "/optimized/blog/trainings/training2-small.webp",
+    thumbnailFallback: "/optimized/blog/trainings/training2-small.jpg",
     category: "Training",
     date: "March 5, 2024",
     readTime: 7,
@@ -61,7 +70,10 @@ export const blogPosts = [
     title: "The Press and Counter-Press",
     excerpt:
       "A detailed analysis of modern pressing systems and how to implement them in your team.",
-    image: "/blogImages/events/event3.jpg", // Add your image path
+    image: "/optimized/blog/tactics/tactics2-large.webp",
+    imageFallback: "/optimized/blog/tactics/tactics2-large.jpg",
+    thumbnail: "/optimized/blog/tactics/tactics2-small.webp",
+    thumbnailFallback: "/optimized/blog/tactics/tactics2-small.jpg",
     category: "Tactics",
     date: "March 1, 2024",
     readTime: 5,
