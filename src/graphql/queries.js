@@ -5,7 +5,6 @@ export const GET_ALL_BLOGS = `
     id
     title
     slug
-    excerpt
     readTime
     postCategory
     content {
