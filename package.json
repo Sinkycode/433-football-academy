@@ -13,13 +13,18 @@
     "optimize-blog": "node scripts/optimizeBlogImages.js"
   },
   "dependencies": {
+    "@apollo/client": "^3.12.11",
     "chokidar": "^4.0.3",
+    "date-fns": "^4.1.0",
     "framer-motion": "^12.4.2",
+    "graphql": "^16.10.0",
+    "graphql-request": "^7.1.2",
     "lodash": "^4.17.21",
     "prop-types": "^15.8.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-icons": "^5.4.0",
+    "react-markdown": "^9.0.3",
     "sharp": "^0.33.5"
   },
   "devDependencies": {

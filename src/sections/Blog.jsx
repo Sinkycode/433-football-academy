@@ -1,26 +1,29 @@
 import { useState, useEffect, useCallback, useMemo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { blogPosts } from "../constants/blogPosts";
 import BlogCard from "../components/BlogCard";
 import BlogCardSkeleton from "../components/BlogCardSkeleton";
 import { fadeIn, staggerContainer } from "../constants/animations";
+import { getAllPosts } from "../services/blogService";
 
 const Blog = () => {
   const [posts, setPosts] = useState([]);
   const [loading, setLoading] = useState(true);
   const [activeCategory, setActiveCategory] = useState("All");
 
-  // Memoize categories
-  const categories = useMemo(
-    () => ["All", "Tactics", "Training", "Nutrition", "Lifestyle"],
-    []
-  );
+  // Memoize categories - we'll get unique categories from posts
+  const categories = useMemo(() => {
+    const uniqueCategories = [
+      ...new Set(posts.map((post) => post.postCategory)),
+    ];
+    return ["All", ...uniqueCategories];
+  }, [posts]);
 
   // Memoize filtered posts
   const filteredPosts = useMemo(
     () =>
       posts.filter(
-        (post) => activeCategory === "All" || post.category === activeCategory
+        (post) =>
+          activeCategory === "All" || post.postCategory === activeCategory
       ),
     [posts, activeCategory]
   );
@@ -28,8 +31,6 @@ const Blog = () => {
   // Memoize category change handler
   const handleCategoryChange = useCallback((category) => {
     setActiveCategory(category);
-    setLoading(true);
-    setTimeout(() => setLoading(false), 800);
   }, []);
 
   useEffect(() => {
@@ -38,9 +39,11 @@ const Blog = () => {
     const fetchPosts = async () => {
       setLoading(true);
       try {
-        // Simulate API call
-        await new Promise((resolve) => setTimeout(resolve, 1500));
-        setPosts(blogPosts);
+        const fetchedPosts = await getAllPosts();
+        if (!abortController.signal.aborted) {
+          console.log("Fetched posts:", fetchedPosts); // Log fetched posts
+          setPosts(fetchedPosts);
+        }
       } catch (error) {
         if (!abortController.signal.aborted) {
           console.error("Failed to fetch posts:", error);
@@ -113,7 +116,16 @@ const Blog = () => {
             ))
           ) : filteredPosts.length > 0 ? (
             // Show filtered posts
-            filteredPosts.map((post) => <BlogCard key={post.id} post={post} />)
+            filteredPosts.map((post) => (
+              <BlogCard
+                key={post.id}
+                post={{
+                  ...post,
+                  image: post.postImage.url, // Map Hygraph image URL to your existing structure
+                  date: post.date, // Map publishedAt to date
+                }}
+              />
+            ))
           ) : (
             // Show empty state
             <motion.div

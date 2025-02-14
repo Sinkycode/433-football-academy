@@ -16,6 +16,7 @@ export {
   arrowRight,
   cheveronRight,
   chevronLeft,
+  close,
   copyrightSign,
   facebook,
   hamburger,
@@ -25,5 +26,4 @@ export {
   star,
   truckFast,
   twitter,
-  close,
 };

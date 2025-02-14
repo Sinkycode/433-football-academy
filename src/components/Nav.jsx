@@ -1,6 +1,6 @@
 import { useState, useEffect, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { hamburger, close } from "../../public/assets/icons";
+import { hamburger, close } from "../assets/icons";
 import { headerLogo } from "../assets/images";
 import { navLinks } from "../constants";
 
